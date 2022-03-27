@@ -3929,6 +3929,7 @@ MonoBehaviour:
   - goal
   CreatesTags:
   - corridor
+  - room
   Exits: {fileID: 7033854084650256262}
   Bounds: {fileID: 7033854083792256936}
   DeadEndChance: 0

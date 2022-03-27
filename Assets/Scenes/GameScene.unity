@@ -75,18 +75,18 @@ LightmapSettings:
     m_BakeBackend: 1
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
-    m_PVRSampleCount: 500
+    m_PVRSampleCount: 512
     m_PVRBounces: 2
-    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentSampleCount: 256
     m_PVREnvironmentReferencePointCount: 2048
-    m_PVRFilteringMode: 2
-    m_PVRDenoiserTypeDirect: 0
-    m_PVRDenoiserTypeIndirect: 0
-    m_PVRDenoiserTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVREnvironmentMIS: 0
+    m_PVREnvironmentMIS: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1755780909
+--- !u!1 &1427515867
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,8 +131,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1755780911}
-  - component: {fileID: 1755780910}
+  - component: {fileID: 1427515869}
+  - component: {fileID: 1427515868}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -140,13 +140,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1755780910
+--- !u!114 &1427515868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755780909}
+  m_GameObject: {fileID: 1427515867}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6626a6e366a9c48a48525cde4050d0b3, type: 3}
@@ -154,19 +154,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Seed: 0
   SectionContainer: {fileID: 0}
-  MaxLevelSize: 50
-  MaxAllowedOrder: 12
+  MaxLevelSize: 30
+  MaxAllowedOrder: 15
   Sections:
   - {fileID: 1959911791063051072, guid: 1d672476818d6814c8bbc91c0af91491, type: 3}
-<<<<<<< HEAD
-  - {fileID: 769972972647456743, guid: 06b4b1cbd0076ab43a1e742155351757, type: 3}
   - {fileID: 1329625515292434550, guid: ad951f3f79192034db681623b0023832, type: 3}
   - {fileID: 7033854083928604577, guid: 323d25f3d22f2ed4b9cae18baaa522ba, type: 3}
-=======
-  - {fileID: 4600354314082259748, guid: 323d25f3d22f2ed4b9cae18baaa522ba, type: 3}
-  - {fileID: 420558360512761838, guid: 06b4b1cbd0076ab43a1e742155351757, type: 3}
-  - {fileID: 1329625515292434550, guid: ad951f3f79192034db681623b0023832, type: 3}
->>>>>>> parent of 564db75 (失敗作)
+  - {fileID: 7842686985266986323, guid: 06b4b1cbd0076ab43a1e742155351757, type: 3}
   DeadEnds:
   - {fileID: 2016811761449678816, guid: 2f166c67edeee7b4391b409ecc589e78, type: 3}
   InitialSectionTags:
@@ -175,15 +169,15 @@ MonoBehaviour:
   - Tag: goal
     MinAmount: 1
     MaxAmount: 1
---- !u!4 &1755780911
+--- !u!4 &1427515869
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755780909}
+  m_GameObject: {fileID: 1427515867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 9.948904, y: 3.4084969, z: 10.389815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
