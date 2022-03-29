@@ -8,6 +8,6 @@ public class ClickEvents : MonoBehaviour
 {
     public void GameStart()
     {
-        SceneManager.LoadScene("GameScene");
+        FadeManager.Instance.LoadScene("GameScene", 0.3f);
     }
 }
