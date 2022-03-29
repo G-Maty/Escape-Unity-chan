@@ -15,7 +15,11 @@ public class Director : MonoBehaviour
     {
         if(GoalEvent.goalflag == true)
         {
-            Debug.Log(GoalEvent.counter);
+            //Debug.Log(GoalEvent.counter);
+            if(GoalEvent.counter == 3)
+            {
+                FadeManager.Instance.LoadScene("Ending",0.3f);
+            }
             GoalEvent.goalflag = false;
         }
     }
