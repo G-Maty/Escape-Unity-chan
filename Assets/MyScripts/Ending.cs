@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ending : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class Ending : MonoBehaviour
 
             Staffrollposition.y += 1f;
             rectTransform.anchoredPosition = Staffrollposition;
+        }
+        if (Input.GetMouseButton(0))
+        {
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }
