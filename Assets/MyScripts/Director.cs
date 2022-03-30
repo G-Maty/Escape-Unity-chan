@@ -8,6 +8,10 @@ public class Director : MonoBehaviour
     public GameObject score_object = null;//textオブジェクト
     public float time = 2; //UI消去時間を決定
 
+    public Text timerText;
+    public float totalTime;
+    int seconds;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +24,18 @@ public class Director : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //タイマー
+        totalTime -= Time.deltaTime;
+        seconds = (int)totalTime;
+        timerText.text = seconds.ToString();
 
+        //タイムオーバー
+        if(seconds == 0)
+        {
+            FadeManager.Instance.LoadScene("GameOver", 0.3f);
+        }
+
+        //ゴール時
         if(GoalEvent.goalflag == true)
         {
             //Debug.Log(GoalEvent.counter);
@@ -31,5 +46,7 @@ public class Director : MonoBehaviour
             }
             GoalEvent.goalflag = false;
         }
+
+        
     }
 }
