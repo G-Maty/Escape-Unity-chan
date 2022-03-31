@@ -7201,8 +7201,13 @@ Camera:
   m_GameObject: {fileID: 1959911790815899611}
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+=======
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+>>>>>>> parent of fd7f6c9 (URPテスト)
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -13826,7 +13831,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2794131408053021353}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 2.87, y: 2.89, z: -3.05}
+=======
+  m_LocalPosition: {x: 3.6767807, y: 1.1440287, z: -2.984724}
+>>>>>>> parent of fd7f6c9 (URPテスト)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1959911791063051073}
